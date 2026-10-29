@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightDeck</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>FlightDeck</h1>
+        <h3>Drone Control Sim</h3>
+    </header>
+    <br>
+    <div id="selection">
+    
+    <H2 id="select">
+        Select Your Drone
+    </H2>
+    </div>
+    <div id="drones" >
+    <div class="cards">
+        <h3>Atlas</h3>
+        <P>Quadcopter</P>
+        <p id="atlasbattery">Battery - 70%</p>
+        <button onclick="selectdrone('Atlas')" class="button">Select</button>
+    </div>
+    <div class="cards">
+        <h3>Float</h3>
+        <p>Quadcopter</p>
+        <p>Battery - 84%</p>
+        <button onclick="selectdrone('Float')" class="button">Select</button>
+
+    </div>
+    </div>
+    <div id="dashboard" >
+    <p id="selecteddrone" class="dashboard">No Drone Selected...</p>
+    <p id="dashboardBattery" class="dashboard">Select a drone to view its battery</p>
+    <div id="batterybar">
+    <div id="batteryfill"></div>
+    </div>
+    <p id="connectionstatus" class="dashboard">Connection Status : Waiting</p>
+    <h3>Telemetry Data</h3>
+    <p id="altitude">Altitude: 24 m</p>
+    <p id="gps">GPS: 28.6139° N, 77.2090° E</p>
+    <p id="speed">Ground Speed: 3.2 m/s</p>
+    <p id="flighttime">Flight Time: 04:56</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
