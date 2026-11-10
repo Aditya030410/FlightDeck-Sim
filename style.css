@@ -95,3 +95,17 @@ header{
     
 
 }
+
+#telemetry{
+    display: grid;
+    gap: 13px;
+    margin-top: 18px;
+    grid-template-columns: 1fr 1fr;
+}
+#telemetry p{
+    background-color: #800e13;
+    padding: 12px;
+    border-radius: 10px;
+    word-spacing: normal;
+
+}
